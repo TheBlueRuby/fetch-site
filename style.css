@@ -32,15 +32,18 @@ a {
 
 .fetch-container {
     display: flex;
-    height: max(90%, 490px);
+    height: max(95%, 490px);
 
-    border: 2px solid #0af;
-    border-image: linear-gradient(#00b, #0af) 2;
-    background-color: rgba(0, 11, 28, 0.5);
+    border: 2px solid #59595A;
+    background-color: rgba(0, 11, 28, 0.75);
     color: #e3e3ea;
     
     margin: auto;
     padding: 24px;
+}
+
+.fetch-container:hover {
+    border-image: linear-gradient(#00b, #0af) 2;
 }
 
 .nerd-font-prompt {
