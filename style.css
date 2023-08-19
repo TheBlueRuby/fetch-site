@@ -1,0 +1,81 @@
+@font-face {
+    font-family:'JetBrainsMono Nerd';
+    src:url("./JetBrainsMonoNerdFont-Regular.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+* {
+    font-family: 'JetBrainsMono Nerd', 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./bg.png);
+    justify-content: center;
+    height: 98vh;
+    align-items: stretch;
+}
+
+a {
+    color: #0af;
+}
+
+.window {
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+    min-width: 690px;
+}
+
+.fetch-container {
+    display: flex;
+    height: max(90%, 490px);
+
+    border: 2px solid #0af;
+    border-image: linear-gradient(#00b, #0af) 2;
+    background-color: rgba(0, 11, 28, 0.5);
+    color: #e3e3ea;
+    
+    margin: auto;
+    padding: 24px;
+}
+
+.nerd-font-prompt {
+    font-family: 'JetBrainsMono Nerd', 'Courier New', Courier, monospace;
+    width: fit-content;
+}
+
+#ascii-art > pre {
+    line-height: 5px;
+    color: #1793d1;
+}
+
+.category {
+    color: #0069ff;
+}
+
+#prompt-content {
+    color: #fff;
+    display: inline-block;
+    background-color: #555;
+    white-space: pre;
+}
+
+.prompt-blue {
+    color: #00a0ff;
+}
+
+.prompt-1 {
+    color: #555;
+    background-color: transparent;
+}
+
+.prompt-2 {
+    color: #0f0;
+}
+
+.command {
+    color: #e3e3ea;
+}
